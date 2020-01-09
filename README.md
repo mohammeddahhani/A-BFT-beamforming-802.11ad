@@ -16,6 +16,9 @@ All protocol parameters can adjusted: the number of slots per period, the maximu
 
 # Requirements:
 A working installation of Python 2 is required.
+The following modules are required:
+- numpy
+- collections
 
 # Usage:
 python abft-simulation.py --help
