@@ -293,7 +293,7 @@ def handle_slot(slot, contending, first_slot=False):
 						.format(sid, pid, stations[sid].idle_log,    \
 							(period - last_period), period, last_period)
 					print '[++] {}'.format(log_periods_toidle)
-					#raw_input() 
+					raw_input() 
 
 
 	elif tx == 1:		
@@ -407,7 +407,7 @@ while s_index < MAX_SLOTS:
 
 	if log: 
 		print
-		#raw_input("... [Enter]")
+		raw_input("... [Enter]")
 	
 	s_index += 1
 
