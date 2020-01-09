@@ -2,10 +2,6 @@
 import sys
 import numpy as np
 from collections import namedtuple,defaultdict
-from string import Formatter
-from itertools import groupby
-from collections import Counter
-from datetime import datetime
 import argparse
 
 
