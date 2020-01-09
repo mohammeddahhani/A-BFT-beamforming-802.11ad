@@ -22,7 +22,7 @@ We also log a set of statistics including but not limited to:
 - Probability a station is idle
 - Probability distribution of success and idle.
 
-The above results can be logged to a file using the --tofile option. 
+The above results can be logged to a file using the `--tofile` option. 
 
 # Requirements:
 A working installation of Python 2 with the following modules are required:
@@ -30,4 +30,7 @@ A working installation of Python 2 with the following modules are required:
 - collections
 
 # Usage:
-python abft-simulation.py --help
+`python abft-simulation.py --help`
+
+# Example:
+`python abft-simulation.py 20 8 4 2 --time 1000000` is a 1000000 periods simulation run with 20 stations, 8 time slots per period, 4 maximum allowed consecutive attempts and an idle backoff window of 2.
