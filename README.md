@@ -15,8 +15,7 @@ We consider the transmission channel ideal so that RSS failures are due to colli
 All protocol parameters can adjusted: the number of slots per period, the maximum number of successive attempts, the idle backoff window  and simulation time in periods.
 
 # Requirements:
-A working installation of Python 2 is required.
-The following modules are required:
+A working installation of Python 2 with the following modules are required:
 - numpy
 - collections
 
