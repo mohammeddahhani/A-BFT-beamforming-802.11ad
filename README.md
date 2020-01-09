@@ -14,6 +14,16 @@ We consider the transmission channel ideal so that RSS failures are due to colli
 # Features:
 All protocol parameters can adjusted: the number of slots per period, the maximum number of successive attempts, the idle backoff window  and simulation time in periods.
 
+We also log a set of statistics including but not limited to:
+- Average number of periods before a station succeeds its RSS
+- Average number of periods until a station becomes idle
+- Success rate in a period
+- Probability of success of a RSS
+- Probability a station is idle
+- Probability distribution of success and idle.
+
+The above results can be logged to a file using the --tofile option. 
+
 # Requirements:
 A working installation of Python 2 with the following modules are required:
 - numpy
