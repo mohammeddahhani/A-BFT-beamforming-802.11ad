@@ -399,10 +399,10 @@ print
 print "Global stats:\n*************"
 print
 cond_idle_proba 	= np.mean(per_period_cond_idle_count)/STA 	# conditional proability: P['idle'/'active']. 
-idle_proba 			= np.mean([1.0-(1.0*x/STA) for x in log_active_sta]) # P['idle'/'active'] + P['idle'/'idle']
+idle_proba 		= np.mean([1.0-(1.0*x/STA) for x in log_active_sta]) # P['idle'/'active'] + P['idle'/'idle']
 old_succ_proba 		= throughput/traffic
-succ_proba 			= get_per_period_proba(log_tx, log_th)
-succ_delay 			= np.mean(log_periods_tosucc)-1
+succ_proba 		= get_per_period_proba(log_tx, log_th)
+succ_delay 		= np.mean(log_periods_tosucc)-1
 if len(log_periods_toidle) == 0: 
 	log_periods_toidle = [0]
 	idle_delay = 0
