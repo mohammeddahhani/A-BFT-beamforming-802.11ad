@@ -1,5 +1,5 @@
 # Introduction:
-This repository contains a Python implementation of the IEEE 802.11ad A-BFT beamforming training medium access protocol.
+This repository contains a Python implementation of the IEEE 802.11ad A-BFT beamforming training medium access protocol **[1]**.
 
 In order to study the performance of IEEE 802.11ad A-BFT beamforming training, 
 we developed a discrete-event time-driven custom simulator in Python that implements the A-BFT medium access protocol.
@@ -34,3 +34,6 @@ A working installation of Python 2 with the following modules are required:
 
 # Example:
 `python abft-simulator.py 20 8 4 2 --time 5000` is a 5000 periods simulation run with 20 stations, 8 time slots per period, 4 maximum allowed consecutive attempts and an idle backoff window of 2.
+
+# References:
+[1] "IEEE Standards 802.11ad-2012: Enhancements for Very High Throughput in the 60 GHz Band", 2012.
