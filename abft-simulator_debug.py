@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+"""
+	author: mdahhani
+	mail: med.dahhani@gmail.com
+"""
 import sys
 import numpy as np
 from collections import namedtuple,defaultdict
