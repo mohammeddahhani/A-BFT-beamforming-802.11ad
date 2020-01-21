@@ -42,7 +42,6 @@ log_max_retx= np.zeros(MAX_PERIOD,dtype=int)
 
 per_period_success 			= []
 per_period_cond_idle_count 	= []
-echec_par_trame 			= []
 
 log_periods_toidle	= [] 
 log_periods_tosucc	= []  
@@ -63,9 +62,9 @@ s_index = 0 # current slot
 	An idle station backoff a number of periods chosen uniformly [0, MAX_IDLE-1].
 
 	- id: station's id
-	- retx_id: id of the ongoing failed RSS attempt
+	- retx_pid: id of the ongoing failed RSS attempt
 	- is_idle: 1 if the station is idle, 0 otherwise.
-	- idle_log: the period in whichs the station became idle (0 if never been idle)
+	- idle_log: the last period station was idle (0 if never been idle)
 """
 Station = namedtuple('Sta',['id','retx_pid','is_idle', 'idle_log']) 
 
