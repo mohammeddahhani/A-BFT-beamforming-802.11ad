@@ -97,7 +97,7 @@ for i in xrange(STA):
 #                                                #
 ##################################################
 
-def to_file(file, STA, NS, succ_delay, succ_count, idle_proba, succ_proba, succ_repart, law_I):
+def to_file(STA, NS, succ_delay, succ_count, idle_proba, succ_proba, succ_repart, law_I):
 	BASE_DIR 		= "./"
 	file 			= "{}simu_{}_slots_{}_maxAttempt_{}_maxIdle".format(BASE_DIR, NS, MAX_ATTEMPT, MAX_IDLE)
 	serialized_arr	= ''
